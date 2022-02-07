@@ -1,10 +1,10 @@
 # FFMPEG Shortcuts
 
-[ffmpeg](https://www.ffmpeg.org/) is awesome! It a complete command line solution record, convert and stream audio and video. 
+[ffmpeg](https://www.ffmpeg.org/) is awesome! It is a complete command line solution to record, convert and stream audio and video. 
 
-I mostly use it to quickly convert / compress video files, but I always forget the commands 😕. So I made a few "shortcut" Bash scripts that use (an already installed) ffmpeg that quickly perform the task I want.
+I mostly use it to quickly convert / compress video files, but I always forget the commands 😕. So I made a few "shortcut" Bash scripts that use (an already installed version of) ffmpeg that quickly perform the task I want.
 
-### Installation
+## Installation
 
 1. Clone this repo: `git clone https://github.com/Thisura98/ffmpeg-shortcuts.git`
 2. cd ffmpeg-shortcuts
@@ -12,7 +12,7 @@ I mostly use it to quickly convert / compress video files, but I always forget t
 4. cp ffmov /usr/local/bin/ffmov
 5. cp ffmp4 /usr/local/bin/ffmp4
 
-### Shortcuts
+## Shortcuts
 
 #### ffmp4 
 
