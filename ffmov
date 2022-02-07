@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo
+echo "FFMOV v1.0 - Compress MOV fast"
+
+# ffmov file.mov 20
+
+FILE_PATH="${1}"
+COMPRESSION="${2}"
+OUT_FILE=`echo "$FILE_PATH" | sed -E "s/\./_c\./"`
+
+echo "     => Compressing '$FILE_PATH' with quality $COMPRESSION"
+echo "     => Outputting as '$OUT_FILE'"
+echo
+
+read -p "Continue with conversion? (y/n)   " CHOICE
+if [[ $CHOICE =~ ^[yY]$ ]]
+then
+    ffmpeg -i "$FILE_PATH" -c:v libx264 -c:a copy -crf "$COMPRESSION" "$OUT_FILE"
+else
+    echo "Not converting. Goodbye!"
+fi
