@@ -6,7 +6,7 @@ I mostly use it to quickly convert / compress video files, but I always forget t
 
 ### Installation
 
-1. Clone this repo
+1. Clone this repo: `git clone https://github.com/Thisura98/ffmpeg-shortcuts.git`
 2. cd ffmpeg-shortcuts
 3. chmod +x ffmov && chmod +x ffmp4
 4. cp ffmov /usr/local/bin/ffmov
@@ -16,7 +16,7 @@ I mostly use it to quickly convert / compress video files, but I always forget t
 
 #### ffmp4 
 
-Compresses MP4 videos using its filename and quality parameters. The output file is always "<filename>_c.mp4".
+Compresses MP4 videos using its filename and quality parameters. The output file is always "filename_c.mp4".
 
 ```
 ffmp4 my_video.mp4 20
@@ -24,7 +24,7 @@ ffmp4 my_video.mp4 20
 
 #### ffmov
 
-Compresses MOV videos using its filename and quality parameters. The output file is always "<filename>_c.mov".
+Compresses MOV videos using its filename and quality parameters. The output file is always "filename_c.mov".
 
 ```
 ffmov my_video.mov 20
