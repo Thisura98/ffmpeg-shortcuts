@@ -16,7 +16,7 @@ I mostly use it to quickly convert / compress video files, but I always forget t
 
 #### ffmp4 
 
-Compresses MP4 videos using its filename and quality parameters. The output file is always "filename_c.mp4".
+Compresses MP4 videos using its filename and quality parameters. The output file is always "filename_c.mp4". Quality parameter is between 0 and 51, where 51 is most compression.
 
 ```
 ffmp4 my_video.mp4 20
@@ -24,8 +24,13 @@ ffmp4 my_video.mp4 20
 
 #### ffmov
 
-Compresses MOV videos using its filename and quality parameters. The output file is always "filename_c.mov".
+Compresses MOV videos using its filename and quality parameters. The output file is always "filename_c.mov". Quality parameter is between 0 and 51, where 51 is most compression.
 
 ```
 ffmov my_video.mov 20
 ```
+
+
+### Notes
+
+1. The compression utilities use [the "crf" flag](https://trac.ffmpeg.org/wiki/Encode/H.264). It is a scale between 0–51. 0 means you don't do any comprssion, 51 means most compression.
